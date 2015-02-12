@@ -1,0 +1,611 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+        <title>Online Quiz</title>
+        <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style-desktop.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+    </head>
+	<body style="font-family: 'Kreon';">
+
+		<!-- Wrapper-->
+			<div id="newwrapper">
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon fa fa-user active" style="text-decoration: none;"><span>Login</span></a>
+						<a href="#" id="true2" class="icon fa fa-superscript" style="text-decoration: none;"><span>Question 1</span></a>
+						<a href="#" id="true3" class="icon fa fa-language fa-4x" style="text-decoration: none;" ><span>Question 2</span></a>
+                        <a href="#" id="true4" class="icon fa fa-twitter" style="text-decoration: none;" ><span>Question 3</span></a>
+						<a href="#" id="true5" class="icon fa fa-play-circle-o" style="text-decoration: none;" ><span>Question 4</span></a>
+						<a href="#" id="true6" class="icon fa fa-pencil" style="text-decoration: none;"><span>Survey</span></a>
+                        <a href="#" id="true7" class="icon fa fa-pie-chart" style="text-decoration: none;" ><span>Summary</span></a>
+					</nav>
+                
+				<!-- Main -->
+					<div id="main">
+						<!-- Login -->
+							<section id="login" class="panel">
+                                <header><h3 style="text-align: center;text-decoration: none;">User Login</h3></header>
+                                <table>
+                                    <tr>
+                                    <td><i class="fa fa-users fa-5x"></i></td>
+                                        <td style="padding-left:20px">
+                                    <data value="101"><input type="text" class="loginClass" placeholder="Username" style="border-radius: 5px; height: 40px; width: 300px;" ></data>
+                                        </td>
+                                        <td style="padding-left:10px">
+                                    <data value="102"><input type="password" class="loginClass" placeholder="Password" style="border-radius: 5px; height: 40px; width: 300px;"></data>
+                                            </td>
+                                        <td style="padding-left:10px">
+                                        <a href="#question1" class="jumplink pic" onclick="trueTwo()">
+									       <span class="btn btn-large btn-primary" style="width:160px"><span>Login</span></span>
+								        </a>
+                                            <br><br>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                <div style="padding-left:300px;" ><a href="" style="text-decoration: none;"><p>Create Account/ Forget password?</p></a></div>
+							</section>
+
+						<!-- Question 1 -->
+							<section name="question1" id="question1" class="panel" style="text-decoration: none;">
+                                <header><h3 style="text-align: center;text-decoration: none;">Question 1</h3></header>
+                                <p style="text-align: center; text-decoration: none;">Given points (x1,y1) and (x2,y2) select the formula to find the equation of the given line.</p>
+                                <div align="center"><table><tr><td><div align="center" id = "Q1"><table><tr>    
+                            <td><label class="radio"><data value="201"><input type="radio" name="q1" id="firstQ1" value="space1" onclick="quantitiativeScoreFuntion(); quantitiativeCounterFuntion(); disableQues('Q1');">
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+					<mrow>
+					  <mrow>
+						 <mi>y</mi>
+						 <mo>=</mo>
+						 <mrow>
+							<mi>m</mi>
+							<mi>x</mi>
+						 </mrow>
+						 <mo>+</mo>
+						 <mi>b</mi>
+					  </mrow>
+					</mrow>
+					</math></label></td></data>
+                            <data value="202"><td style="padding-left:20px"><label class="radio"><input type="radio" name="q1" id="firstQ2" value="space2" onclick="quantitiativeCounterFuntion(); disableQues('Q1');">
+					<math xmlns="http://www.w3.org/1998/Math/MathML" display="">
+						<mrow>
+							<msup>
+								<mrow>
+									<mo stretchy="false">(</mo>
+									<mrow>
+										<mi>x</mi>
+										<mo>-</mo>
+										<mi>h</mi>
+									  </mrow>
+									<mo stretchy="false">)</mo>
+									</mrow>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+							</msup>
+							<mrow>
+								<mo>+</mo>
+							</mrow>
+							<msup>
+								<mrow>
+									<mo stretchy="false">(</mo>
+									<mrow>
+										<mi>y</mi>
+										<mo>-</mo>
+										<mi>k</mi>
+									  </mrow>
+									<mo stretchy="false">)</mo>
+									</mrow>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+							</msup>
+							<mo>=</mo>
+							<msup>
+								<mrow>
+									<mi>r</mi>
+								</mrow>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+							</msup>
+						</mrow>
+						
+					</math></label></td></data></tr>
+                                    
+                                    <tr>
+                            <td><data value="203"><label class="radio"><input type="radio" name="q1" id="firstQ3" value="space3" onclick="quantitiativeCounterFuntion(); disableQues('Q1');">
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+						<mrow>
+						  <mrow>
+							<mi>y</mi>
+								<mo>-</mo>
+								<msub>
+									<mi>y</mi>
+									<mn>1</mn>
+								</msub>					
+							 <mo>=</mo>
+							 <mrow>
+								<mi>m</mi>
+								<mo stretchy="false">(</mo>
+								<mi>x</mi>
+								<mo>-</mo>
+								<msub>
+									<mi>x</mi>
+									<mn>1</mn>
+								</msub>
+								<mo stretchy="false">)</mo>
+							  </mrow>
+						  </mrow>
+						</mrow>
+					</math></label></data></td>
+                            <td style="padding-left:20px"><label class="radio"><data value="204"><input type="radio" name="q1" id="firstQ4" value="space4" onclick="quantitiativeCounterFuntion(); disableQues('Q1');">
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+	<mrow>
+												<mi> y </mi>
+												<mo> - </mo>
+												<msub>
+													<mi> y </mi>
+													<mi> 1 </mi>
+												</msub>
+												
+												<mo> = </mo>
+												
+												<mfrac>
+												  <mrow>
+												    <msub>
+														<mi> y </mi>
+														<mi> 2 </mi>
+													</msub>
+													<mo> - </mo>
+													<msub>
+														<mi> y </mi>
+														<mi> 1 </mi>
+													</msub>
+												  </mrow>
+												  <mrow>
+												    <msub>
+														<mi> x </mi>
+														<mi> 2 </mi>
+													</msub>
+													<mo> - </mo>
+													<msub>
+														<mi> x </mi>
+														<mi> 1 </mi>
+													</msub>
+												  </mrow>
+												</mfrac>
+												<mrow>
+													<mi> ( </mi>
+													<mi> x </mi>
+													<mo> - </mo>
+													<msub>
+														<mi> x </mi>
+														<mi> 2 </mi>
+													</msub>
+													<mi> ) </mi>
+												</mrow>
+											</mrow>		
+					</math></label></data></td>
+                            </tr></table></div></td>
+                                <td style="padding-left: 100px"><figure><img src="img/graph.jpg" alt="graph" height="242" width="242" /><figcaption align="center">Figure 1<figcaption></td></tr>                                </table></div>
+                                
+                            <br><br>    
+                            <div align="center"><table><tr>
+                            <td>
+                                    <a href="#question2" class="jumplink pic" onclick="trueThree()">
+									       <span class="btn btn-large btn-primary" style="width:260px"><span>Submit and Next Question</span></span>
+								        </a>
+                                <a href="" class="jumplink pic">
+									       <span class="btn btn-large btn-danger" style="width:260px"><span>Cancel and Clear Selection</span></span>
+								        </a>
+                            </td>          
+                            </tr></table></div>
+							</section>
+
+						<!-- Question 2 -->
+							<section id="question2" class="panel">
+                                <header><h3 style="text-align: center;text-decoration: none;">Question 2</h3></header>
+                                <p style="text-align: center; text-decoration: none;">Select the cosine theorem formula.</p>
+                                <div align="center" id="Q2"><table><tr>    
+                            <td><label class="radio"><data value="301"><input type="radio" name="q2" id="secondQ1" value="space1" onclick="quantitiativeScoreFuntion(); quantitiativeCounterFuntion(); disableQues('Q2');" >
+							<math xmlns="http://www.w3.org/1998/Math/MathML">
+									<mrow>
+										<mo>cos(&alpha;&pm;&beta;)</mo>
+										<mo> = </mo>
+										<mo> cos&alpha; cos&beta; &mp; sin&alpha; sin&beta;</mo>
+									</mrow
+							</math>
+							</data></label></td>
+							
+							
+                            <td style="padding-left:20px"><label class="radio"><data value="302"><input type="radio" name="q2" id="secondQ2" value="space2" onclick="quantitiativeCounterFuntion(); disableQues('Q2');">
+							<math xmlns="http://www.w3.org/1998/Math/MathML">
+									<mrow>
+										<mo>sin(&alpha;&pm;&beta;)</mo>
+										<mo> = </mo>
+										<mo> sin&alpha; cos&beta; &mp; cos&alpha; sin&beta;</mo>
+									</mrow>
+							</math>
+							</data></label></td></tr><tr>
+							
+							
+                            <td><label class="radio"><data value="3967381398"><data value="303"><input type="radio" name="q2" id="secondQ3" value="space3" onclick="quantitiativeCounterFuntion(); disableQues('Q2');">
+							<math xmlns="http://www.w3.org/1998/Math/MathML">
+									<mrow>
+										<mo>sin &alpha; + sin &beta;</mo>
+										<mo> = </mo>
+										<mo> 2 </mo>
+										<mrow>
+											<mo>sin </mo>
+											<mo> ( </mo>
+												<mfrac>
+													<mrow>
+														<mo> &alpha; + &beta;</mo> 
+													</mrow>
+													<mrow>
+														<mo> 2 </mo>
+													</mrow>
+												</mfrac>
+												<mo>)</mo>
+										</mrow>
+										<mrow>
+											<mo>cos </mo>
+											<mo> ( </mo>
+												<mfrac>
+													<mrow>
+														<mo> &alpha; - &beta;</mo> 
+													</mrow>
+													<mrow>
+														<mo> 2 </mo>
+													</mrow>
+												</mfrac>
+												<mo>)</mo>
+										</mrow>
+									</mrow>
+							</math>
+							</label></td>
+							
+							
+                            <td style="padding-left:20px"><label class="radio"><data value="304"><input type="radio" name="q2" id="secondQ4" value="space4" onclick="quantitiativeCounterFuntion(); disableQues('Q2');">
+							<math xmlns="http://www.w3.org/1998/Math/MathML">
+									<mrow>
+										<mo>sin &alpha; - sin &beta;</mo>
+										<mo> = </mo>
+										<mo> 2 </mo>
+										<mrow>
+											<mo>cos </mo>
+											<mo> ( </mo>
+												<mfrac>
+													<mrow>
+														<mo> &alpha; + &beta;</mo> 
+													</mrow>
+													<mrow>
+														<mo> 2 </mo>
+													</mrow>
+												</mfrac>
+												<mo>)</mo>
+										</mrow>
+										<mrow>
+											<mo>sin </mo>
+											<mo> ( </mo>
+												<mfrac>
+													<mrow>
+														<mo> &alpha; - &beta;</mo> 
+													</mrow>
+													<mrow>
+														<mo> 2 </mo>
+													</mrow>
+												</mfrac>
+												<mo>)</mo>
+										</mrow>
+									</mrow>
+							</math>
+							</data></label></td>
+							
+							
+                            </tr></table></div>
+                                
+                            <br><br>    
+                            <div align="center"><table><tr>
+                            <td><a href="#question3" class="jumplink pic" onclick="trueFour()">
+									       <span class="btn btn-large btn-primary" style="width:260px"><span>Submit and Next Question</span></span>
+								        </a>
+                                <a href="" class="jumplink pic">
+									       <span class="btn btn-large btn-danger" style="width:260px"><span>Cancel and Clear Selection</span></span>
+								        </a>
+                            </tr></table></div>
+                            </section>
+                        
+                        <!-- Question 3 -->
+				            <section id="question3" class="panel">
+                                <header><h3 style="text-align: center;text-decoration: none;">Question 3</h1></header>
+                                <p style="text-align: center; text-decoration: none;">As per the latest twitter news, complete the article snippet given by selecting appropriate choices for the blanks.</p><br>
+                                <p style="text-align: center; text-decoration: none;">Twitter wants more cash. The company announched two <mark onclick="enableArea1()" id="area1">$ ________</mark> million debt offerings in a filing today, each with a potential $100 increase provided that the sales are oversubscribed. Assuming full tip, including the $100 million boosters. <mark onclick="enableArea2()" id="area2">________</mark> will raise up to $1.5 billion with the two odderings.</p>
+                            <br>
+                                
+                            <div align="center" id="Q3A"><table><tr>
+                            <td><label class="radio"><data value="401"><input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1" onclick="readingScoreFuntion(); readingScoreCounterFuntion(); disableQues('Q3A'); replaceText1();">$650</data></label></td>          
+                                
+                            <td style="padding-left:20px"><label class="radio"><data value="402"><input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2" onclick="readingScoreCounterFuntion(); disableQues('Q3A'); replaceText2();">$550</data></label></td>
+                                
+                            <td style="padding-left:20px"><label class="radio"><data value="403"><input type="radio" name="optionsRadios1" id="optionsRadios3" value="option3" onclick="readingScoreCounterFuntion(); disableQues('Q3A'); replaceText3();">$450</data></label></td>
+                            </tr></table></div>        
+                               
+                            <div align="center" id="Q3B"><table><tr>    
+                            <td><label class="radio"><data value="404"><input type="radio" name="optionsRadios2" id="optionsRadios11" value="option1" onclick="readingScoreFuntion(); readingScoreCounterFuntion(); disableQues('Q3B'); replaceTextA();">Twitter</data></label></td>
+                                
+                            <td style="padding-left:20px"><label class="radio"><data value="405"><input type="radio" name="optionsRadios2" id="option2" value="option12" onclick="readingScoreCounterFuntion(); disableQues('Q3B'); replaceTextB();">Google</data></label></td>
+                                
+                            <td style="padding-left:20px"><label class="radio"><data value="406"><input type="radio" name="optionsRadios2" id="option3" value="option13" onclick="readingScoreCounterFuntion(); disableQues('Q3B'); replaceTextC();">Facebook</data></label></td>
+                            </tr></table></div> 
+                                
+                            <br><br>    
+                            <div align="center"><table><tr>
+                            <td><a href="#question4" class="jumplink pic">
+									       <span class="btn btn-large btn-primary" style="width:260px" onclick="trueFive()"><span>Submit and Next Question</span></span>
+								        </a>
+                                <a href="" class="jumplink pic">
+									       <span class="btn btn-large btn-danger" style="width:260px"><span>Cancel and Clear Selection</span></span>
+								        </a></td>
+                            </tr></table></div> 
+							
+                        </section>
+                        
+                        <!-- Question 4 -->
+							<section id="question4" class="panel">
+                                <header><h3 style="text-align: center;text-decoration: none;">Question 4</h3></header>
+                                <p style="text-align: center; text-decoration: none;">Watch the video and answer the following question. What is the source as mentioned in the video?</p>
+                                <div align="center">
+                                    <video id="video1" width="440" height="285" poster="img/nasa.png" controls><source src="question4.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+                                
+                                <div align="center" id="Q4"><table><tr>    
+                            <td><label class="radio"><data value="501"><input type="radio" name="space" id="spaceQ1" value="space1" onclick="videoScoreFuntion(); videoScoreCounterFuntion(); disableQues('Q4');" >NASA.gov</data></label></td>
+                            <td style="padding-left:20px"><label class="radio"><data value="502"><input type="radio" name="space" id="spaceQ2" value="space2" onclick="videoScoreCounterFuntion(); disableQues('Q4');">Data.gov</data></label></td>
+                            <td style="padding-left:20px"><label class="radio"><data value="503"><input type="radio" name="space" id="spaceQ3" value="space3" onclick="videoScoreCounterFuntion(); disableQues('Q4');">Facebook</data></label></td>
+                            <td style="padding-left:20px"><label class="radio"><data value="504"><input type="radio" name="space" id="spaceQ4" value="space4" onclick="videoScoreCounterFuntion(); disableQues('Q4');">XYZ.net</data></label></td>
+                            </tr></table></div> 
+                                <br><br>
+                            <div align="center"><table><tr>
+                            <td>
+                                <a href="#survey" class="jumplink pic" onclick="trueSix()">
+									       <span class="btn btn-large btn-primary" style="width:260px"><span>Submit & Next Question</span></span>
+								        </a>
+                                <a href="" class="jumplink pic">
+									       <span class="btn btn-large btn-danger" style="width:260px"><span>Cancel and Clear Selection</span></span>
+								        </a>
+                            </tr></table></div> 
+							</section>
+                        
+						<!-- Survey -->
+							<section id="survey" class="panel">
+                                <header><h3 style="text-align: center;text-decoration: none;">Survey</h1></header>
+                                <div align = "center">
+                                    <textarea style="width:900px; height: 100px" placeholder="How did you like the center?"></textarea>
+                                    <p>Select Text Area Location:</p>
+                                </div>
+                            
+                            <div align = "center">
+                            <input type="text" name="cityName" list="city" placeholder="City" style="width:250px; height: 40px"/>
+                                <datalist id="city">
+                                    <option value="San Jose">
+                                    <option value="San Francisco">
+                                    <option value="Los Angeles">
+                                    <option value="San Diego">
+                                    <option value="Belmont">
+                                    <option value="Sacramento">
+                                    <option value="Long Beach">
+                                    <option value="Santa Barbara">
+                                    <option value="Berkeley">
+                                    <option value="Monterey">
+                                </datalist>
+                                
+                            <input type="text" name="roomName" list="roomNumber" placeholder="Room Number" style="width:250px; height: 40px;"/>
+                                <datalist id="roomNumber">
+                                    <option value="Room 320">
+                                    <option value="Room 450">
+                                    <option value="Room 620">
+                                    <option value="Room 876">
+                                    <option value="Room 908">
+                                    <option value="Room 310">
+                                    <option value="Room 110">
+                                    <option value="Room 520">
+                                    <option value="Room 580">
+                                    <option value="Room 960">
+                                </datalist>
+                                </div>
+                                <br><br>
+                            <div align="center"><table><tr>
+                            <td>
+                                <a href="#summary" class="jumplink pic" onclick="trueSeven()">
+									       <span class="btn btn-large btn-primary" style="width:260px"><span>Submit & Get Score</span></span>
+								        </a>
+                                <a href="#summary" class="jumplink pic">
+									       <span class="btn btn-large btn-danger" style="width:260px"><span>Skip & Get Score</span></span>
+                               </td>
+                            </tr></table></div> 
+   
+							</section>
+                        
+						<!-- Summary -->
+							<section id="summary" class="panel" style="height: 600px">
+                                <header><h3 style="text-align: center;text-decoration: none;">Score Card</h3></header>
+                                <article>
+                                    <section>
+                                    <details>
+                                    <summary>Quantitative Section</summary>
+                                        <br>
+                                    <ol>
+                                    <li><table><tr><td>Number of Questions Answered:</td><td><div id="counter1" style="padding-left: 10px;">0</div></td></tr></table></li>
+                                    <li><table><tr><td>Number of Correct Answers:</td><td><div id="score1" style="
+padding-left: 10px;">0</div></td></tr></table></li>
+                                    <li><table><tr><td>Score:</td><td><div id="total1" style="padding-left: 10px;">0</div></td></tr></table></li>
+                                    </ol>
+                                    </details>
+                                    </section>
+                                    
+                                    <section>
+                                    <details>
+                                    <summary>Reading Section</summary>
+                                        <br>
+                                    <ol>
+                                    <li><table><tr><td>Number of Questions Answered:</td><td><div id="counter2" style="padding-left: 10px;">0</div></td></tr></table></li>
+                                    <li><table><tr><td>Number of Correct Answers:</td><td><div id="score2" style="
+padding-left: 10px;">0</div></td></tr></table></li>
+                                    <li><table><tr><td>Score:</td><td><div id="total2" style="padding-left: 10px;">0</div></td></tr></table></li>
+                                    </ol>
+                                    </details>
+                                    </section>
+                                    
+                                    <section>
+                                    <details>
+                                    <summary>Audio/Video Section</summary>
+                                        <br>
+                                    <ol>
+                                    <li><table><tr><td>Number of Questions Answered:</td><td><div id="counter3" style="padding-left: 10px;">0</div></td></tr></table></li>
+                                    <li><table><tr><td>Number of Correct Answers:</td><td><div id="score3" style="
+padding-left: 10px;">0</div></td></tr></table></li>
+                                    <li><table><tr><td>Score:</td><td><div id="total3" style="padding-left: 10px;">0</div></td></tr></table></li>
+                                    </ol>
+                                    </details>
+                                    </section>
+                                </article>
+                                <div align=center>
+                                <h3>Thank You</h1>
+                                </div>
+                                <a href=""><button class="btn btn-large btn-block btn-success " type="button">Finish</button></a>
+							</section>
+					</div>
+			</div>
+                 <br>                           
+<footer>
+  <p align="center">Developed and Maintained by Kishan Chaitanya Gollapudi. Copyright &copy; 2014.</p>
+</footer>
+	</body>
+        <script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            quantitiativeScore = 0;
+            quantitiativeTotal = 0;
+            quantitiativeCounter = 0;
+            readingScore = 0;
+            readingTotal = 0;
+            readingCounter = 0;
+            videoScore = 0;
+            videoTotal = 0;
+            videoCounter = 0;
+            
+            
+            function quantitiativeScoreFuntion() {
+	           quantitiativeScore++;
+               quantitiativeTotal = quantitiativeTotal+100;
+               document.getElementById("score1").innerHTML = quantitiativeScore;
+               document.getElementById("total1").innerHTML = quantitiativeTotal;
+            }
+            
+            function quantitiativeCounterFuntion() {
+                quantitiativeCounter++;
+                document.getElementById("counter1").innerHTML = quantitiativeCounter;
+            }
+            
+            function readingScoreFuntion() {
+	           readingScore++;
+               readingTotal = readingTotal+100;
+               document.getElementById("score2").innerHTML = readingScore;
+               document.getElementById("total2").innerHTML = readingTotal;
+            }
+            
+            function readingScoreCounterFuntion() {
+                readingCounter++;
+                document.getElementById("counter2").innerHTML = readingCounter;
+            }
+            
+            function videoScoreFuntion() {
+	           videoScore++;
+               videoTotal=videoTotal+100;
+               document.getElementById("score3").innerHTML = videoScore;    
+               document.getElementById("total3").innerHTML = videoTotal;
+            }
+            
+            function videoScoreCounterFuntion() {
+                videoCounter++;
+                document.getElementById("counter3").innerHTML = videoCounter;
+            }
+            
+            function disableQues(id) {
+                $('#'+id+' :input').attr('disabled', true);
+            }
+            
+            function trueTwo(){
+                document.getElementById("true2").href="#question1";
+                $("#Q3A").hide();
+                $("#Q3B").hide();
+            }
+            
+            function trueThree(){
+                document.getElementById("true3").href="#question2";
+                document.getElementById("true2").href="#";
+            }
+            
+            function trueFour(){
+                document.getElementById("true4").href="#question3";
+                document.getElementById("true3").href="#";
+            }
+            
+            function trueFive(){
+                document.getElementById("true5").href="#question4";
+                document.getElementById("true4").href="#";
+            }
+            
+            function trueSix(){
+                document.getElementById("true6").href="#survey";
+                document.getElementById("true5").href='#';
+
+            }
+            
+            function trueSeven(){
+                document.getElementById("true7").href="#summary";           
+                document.getElementById("true6").href='#';
+            }
+            
+            function enableArea1(){
+                $("#Q3A").toggle();
+            }
+            
+            function enableArea2(){
+                $("#Q3B").toggle();
+            }
+            
+            function replaceText1(){
+                document.getElementById("area1").innerHTML = "$650";
+            }
+            
+            function replaceText2(){
+                document.getElementById("area1").innerHTML = "$550";
+            }
+            
+            function replaceText3(){
+                document.getElementById("area1").innerHTML = "$450";
+            }
+            
+            function replaceTextA(){
+                document.getElementById("area2").innerHTML = "Twitter";
+            }
+            
+            function replaceTextB(){
+                document.getElementById("area2").innerHTML = "Google";
+            }
+            
+            function replaceTextC(){
+                document.getElementById("area2").innerHTML = "Facebook";
+            }
+            
+        </script>
+</html>

@@ -1,0 +1,34 @@
+	body {
+	    background-color: #98AFC7;
+	}
+	.icon {
+	    position: relative;
+	    text-decoration: none;
+	}
+	.icon:before {
+	    font-family: FontAwesome;
+	}
+	#nav a {
+	    position: relative;
+	    display: inline-block;
+	    color: black;
+	    width: 1em;
+	    height: 1em;
+	    line-height: 0.9em;
+	}
+	#main {
+	    position: relative;
+	    overflow: hidden;
+	}
+	
+.loginClass{
+        border-radius: 5px;
+        height: 30px;
+        width: 200px;
+}
+
+.space{
+    display: block;
+}
+
+
